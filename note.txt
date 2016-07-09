@@ -1,0 +1,15 @@
+cach chay project 
+php artisan serve
+có thể sửa đường dẫn ở file route
+app/Http/route.php
+trong route khi click để sửa đường dẫn
+
+Cách truyền biến vào trong file view
+
++return view('welcome',compact('people'));
++ có các cách khác 
+- return view('view')->with('people',$people);
+
+Cách viết php trong file view
+bỏ <?php ?> đi và thay bằng @ với các từ khóa 
+							{{}} với các cụm lệnh

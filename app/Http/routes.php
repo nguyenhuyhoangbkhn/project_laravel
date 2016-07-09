@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-	$people = ['Hoang','Huy','Nguyen'];
-    return view('welcome',compact('people'));
-});
+// Route::get('/', function () {
+// 	$people = ['Hoang','Huy','Nguyen'];
+//     return view('welcome',compact('people'));
+//     // return view('view')->withPeople($people);
+// });
 
 
-Route::get('about', function () {
-    return view('page.about'); //resoure/views/page/about.blade.php 
-});
+// Route::get('about', function () {
+//     return view('page.about'); //resoure/views/page/about.blade.php 
+// });
+
+Route::get('/','PagesController@home');
+Route::get('about','PagesController@about');
